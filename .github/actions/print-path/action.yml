@@ -3,5 +3,6 @@ description: 'Print the path of the GitHub action'
 runs:
   using: 'composite'
   steps:
-    run: echo "hai"
-    shell: bash
+    - name: test
+      run: echo "hai"
+      shell: bash
