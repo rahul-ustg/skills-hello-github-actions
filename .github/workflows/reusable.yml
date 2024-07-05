@@ -42,5 +42,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print
-        run: "echo print ${{ jobs.example_job.outputs.output1 }}"
+        run: "echo $value"
       
