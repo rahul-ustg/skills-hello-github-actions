@@ -9,8 +9,8 @@ jobs:
         test-group: [1, 2]
         node: [14, 16]
         include: 
-          - test-group1: 10
-            node1: 12
+          - test-group: 10
+            node: 12
           - node: 10
     steps:
       - run: echo "Mock test logs" > test-job-${{ strategy.job-index }}.txt
