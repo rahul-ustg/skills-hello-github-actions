@@ -10,4 +10,4 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Print GitHub Action path
-      run: echo "GitHub Action Path:${{ github.actor }}"
+      run: echo "GitHub Action Path:${{ env }}"
