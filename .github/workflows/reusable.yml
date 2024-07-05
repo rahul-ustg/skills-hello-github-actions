@@ -23,7 +23,7 @@ on:
         required: true
         default : rahul
 env:
-  VAR: ${{ jobs.example_job.outputs.output2 }}
+  VAR: workflowlevelenvvar
 
 jobs:
   example_job:
