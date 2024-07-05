@@ -1,0 +1,6 @@
+name: 'Print GitHub Action Path'
+description: 'Print the path of the GitHub action'
+runs:
+  using: 'composite'
+  steps:
+    - run: echo "GitHub Action Path: ${{ github.action_path }}"
