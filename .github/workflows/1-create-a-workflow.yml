@@ -31,7 +31,7 @@ jobs:
         run: |
           echo "current_step=$(cat ./.github/steps/-step.txt)" >> $GITHUB_OUTPUT
           echo "workflow name: $GITHUB_WORKFLOW" 
-          echo "context: ${{ toJson(github) }}
+          echo  ${{ toJson(github) }}
           echo "$GITHUB_CONTEXT"
     outputs:
       current_step: ${{ steps.get_step.outputs.current_step }}
