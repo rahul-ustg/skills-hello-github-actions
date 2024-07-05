@@ -37,7 +37,10 @@ jobs:
         run: "echo hi ${{ inputs.callerinput1 }}"
       - id: step3
         run: echo "secondword=world" >> $GITHUB_OUTPUT
-      - id: step4
-        run: |
-          echo ${{ jobs.example_job.outputs.output1 }}
-          echo ${{ jobs.example_job.outputs.output2 }}
+  print_output:
+    name: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: print
+        run: "echo print ${{ jobs.example_job.outputs.output1 }}"
+      
