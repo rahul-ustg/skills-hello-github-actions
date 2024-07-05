@@ -4,6 +4,6 @@ runs:
   using: 'composite'
   steps:
     run: |
-      cd ${{ github.action_path }}
+      echo "${{ github.actor }}"
       pwd
       ls -lrt
