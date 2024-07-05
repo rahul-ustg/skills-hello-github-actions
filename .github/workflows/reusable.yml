@@ -36,7 +36,7 @@ jobs:
     steps:
       - env:
           OUT: ${{ steps.step1.outputs.firstword }}" 
-          run: "echo $OUT"
+        run: "echo $OUT"
       - id: step1
         run: echo "firstword=hello" >> $GITHUB_OUTPUT
       - id: step2
