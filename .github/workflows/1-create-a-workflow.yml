@@ -1,4 +1,4 @@
-Gname: Step 1, Create a workflow
+name: Step 1, Create a workflow
 
 # This step triggers after every push to welcome-workflow.
 # This workflow updates from step 1 to step 2.
