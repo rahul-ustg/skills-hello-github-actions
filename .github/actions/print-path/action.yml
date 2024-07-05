@@ -3,7 +3,4 @@ description: 'Print the path of the GitHub action'
 runs:
   using: 'composite'
   steps:
-    run: |
-      echo "hi custom composite action"
-      pwd
-      ls -lrt
+    run: echo "hai"
