@@ -45,5 +45,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print
-        run: "echo ${{ env.VAR }}"
+        run: |
+          "echo ${{ env.VAR }}"
+           echo "printing output ${{ steps.step1.outputs.firstword }}"
+      
       
