@@ -24,6 +24,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
         uses: actions/checkout@v4
       - id: get_step
         run: |
