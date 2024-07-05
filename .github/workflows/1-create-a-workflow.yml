@@ -1,4 +1,4 @@
-name: Step 1, Create a workflow
+Gname: Step 1, Create a workflow
 
 # This step triggers after every push to welcome-workflow.
 # This workflow updates from step 1 to step 2.
@@ -28,6 +28,7 @@ jobs:
       - id: get_step
         run: |
           echo "current_step=$(cat ./.github/steps/-step.txt)" >> $GITHUB_OUTPUT
+          echo "workflow name: $GITHUB_WORKFLOW" 
     outputs:
       current_step: ${{ steps.get_step.outputs.current_step }}
 
