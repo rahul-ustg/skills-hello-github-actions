@@ -8,6 +8,5 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
-
-    - name: Print GitHub Action path
-      run: echo "GitHub Action Path:${{ env }}"
+    - name: lets use the rusable workflow and test jobs.context
+      uses: ./reusable.yml
