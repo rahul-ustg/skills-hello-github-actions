@@ -45,5 +45,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print
-        run: "echo ${{ env.GITHUB_VAR }}"
+        run: "echo ${{ env.VAR }}"
       
