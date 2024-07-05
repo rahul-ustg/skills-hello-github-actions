@@ -5,3 +5,5 @@ on: [push]
 jobs:
   call-reusable-workflow:
     uses: rahul-ustg/skills-hello-github-actions/.github/workflows/reusable.yml@main
+    with: 
+      firstword: "hello Jaanvi"
