@@ -3,10 +3,5 @@ name: call reusable workflow
 on: [push]
 
 jobs:
-  print-path:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-    - name: lets use the rusable workflow and test jobs.context
-      uses: rahul-ustg/skills-hello-github-actions/.github/workflows/reusable.yml@main
+  call-reusable-workflow:
+    uses: rahul-ustg/skills-hello-github-actions/.github/workflows/reusable.yml@main
