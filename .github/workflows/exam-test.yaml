@@ -1,0 +1,13 @@
+name: Print GitHub Action Path
+
+on: [push]
+
+jobs:
+  print-path:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Print GitHub Action path
+      run: echo "GitHub Action Path:${{ github.action_path }}"
