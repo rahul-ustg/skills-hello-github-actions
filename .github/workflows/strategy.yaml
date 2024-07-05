@@ -10,6 +10,7 @@ jobs:
         node: [14, 16]
         include: 
           - node1: 10
+            node2: 20
     steps:
       - run: echo "Mock test logs" > test-job-${{ strategy.job-index }}.txt
       - name: Upload logs
