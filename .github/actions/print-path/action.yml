@@ -4,6 +4,6 @@ runs:
   using: 'composite'
   steps:
     run: |
-      echo "${{ github.actor }}"
+      echo "hi custom composite action"
       pwd
       ls -lrt
