@@ -2,6 +2,7 @@ name: Reusable workflow
 
 on:
   workflow_call:
+
     # Map the workflow outputs to job outputs
     outputs:
       firstword:
@@ -21,6 +22,8 @@ on:
         description: caller input 
         required: true
         default : rahul
+env:
+  VAR: ${{ jobs.example_job.outputs.output2 }}
 
 jobs:
   example_job:
@@ -42,5 +45,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print
-        run: "echo $value"
+        run: "echo ${{ env.GITHUB_VAR }}"
       
