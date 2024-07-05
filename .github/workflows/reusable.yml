@@ -39,5 +39,5 @@ jobs:
         run: echo "secondword=world" >> $GITHUB_OUTPUT
       - id: step4
         run: |
-          echo ${{ outputs.firstword.value }}
-          echo ${{ outputs.secondword.value }}
+          echo ${{ jobs.example_job.outputs.output1 }}
+          echo ${{ jobs.example_job.outputs.output2 }}
