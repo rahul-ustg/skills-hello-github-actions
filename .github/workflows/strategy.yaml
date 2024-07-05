@@ -12,7 +12,7 @@ jobs:
           - test-group: 10
             node: 12
           - node: 10
-          - node: 10
+          - node1: 10
             test: 12
     steps:
       - run: echo "Mock test logs" > test-job-${{ strategy.job-index }}.txt
