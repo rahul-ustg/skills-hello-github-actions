@@ -37,3 +37,7 @@ jobs:
         run: "echo hi ${{ inputs.callerinput1 }}"
       - id: step3
         run: echo "secondword=world" >> $GITHUB_OUTPUT
+      - id: step4
+        run: |
+          echo ${{ outputs.firstword.value }}
+          echo ${{ outputs.secondword.value }}
