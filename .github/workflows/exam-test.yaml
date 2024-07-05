@@ -1,4 +1,4 @@
-name: Print GitHub Action Path
+name: call reusable workflow
 
 on: [push]
 
