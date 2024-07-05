@@ -12,6 +12,7 @@ jobs:
           - test-group: 10
             node: 12
           - node: 10
+          - node: 10
     steps:
       - run: echo "Mock test logs" > test-job-${{ strategy.job-index }}.txt
       - name: Upload logs
