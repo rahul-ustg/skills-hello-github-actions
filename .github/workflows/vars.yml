@@ -16,6 +16,7 @@ jobs:
       run: |
         env
         echo ${{ env.GITHUB_REPOSITORY_OWNER }}
+        echo ${{ runner }}
         echo "$GITHUB_REPOSITORY_OWNER"
         echo "repository variable : $REPOSITORY_VAR"
         echo "organization variable : $ORGANIZATION_VAR"
