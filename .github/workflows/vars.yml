@@ -15,6 +15,7 @@ jobs:
     - name: Use variables
       run: |
         env
+        echo $GITHUB_ACTION_REPOSITORY
         echo "repository variable : $REPOSITORY_VAR"
         echo "organization variable : $ORGANIZATION_VAR"
         echo "overridden variable : $OVERRIDE_VAR"
