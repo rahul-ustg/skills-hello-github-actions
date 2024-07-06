@@ -14,6 +14,7 @@ jobs:
     steps:
     - name: Use variables
       run: |
+        env
         echo "repository variable : $REPOSITORY_VAR"
         echo "organization variable : $ORGANIZATION_VAR"
         echo "overridden variable : $OVERRIDE_VAR"
