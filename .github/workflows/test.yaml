@@ -2,7 +2,7 @@ name: deploy-workflow
 on: [push]
 jobs:
     production-deploy:
-        if: github.repository == 'octo/my-prod-repo'
+        if: github.repository == 'rahul-ustg/skills-hello-github-actions'
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
